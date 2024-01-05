@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # Color guesser
-=======
-# Project Title
->>>>>>> bd15ebba1c7bd163f76e917046d448662362608f
 
 This is a simple JavaScript game where the player guesses RGB color values. The game generates a random RGB color and the player has to guess the values. The score is calculated based on how close the player's guess is to the actual values.
 
