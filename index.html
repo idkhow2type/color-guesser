@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="color-display">
+            <h2>Color</h2>
+            <div id="color"></div>
+            <p id="answer"></p>
+        </div>
+        <div class="color-display">
+            <h2>Guess</h2>
+            <div id="guess" class="rainbow"></div>
+            <p id="score">Score: ???</p>
+        </div>
+        <div>
+            <h2>How to play</h2>
+            <p>
+                The computer will pick a color and you will have to guess it.
+                <br /><br />
+                Guess the color by entering the RGB values in the form.
+                <br /><br />
+                Your score will be displayed in the score box. <br /><br />
+                The lower the score, the closer you are to the color.
+                <br /><br />
+            </p>
+        </div>
+        <div class="stats">
+            <p class="time">Time: 0.000s</p>
+            <p class="guesses">Guesses: 0</p>
+        </div>
+        <div class="controls">
+            <form action="">
+                <label for="R">R</label>
+                <input type="number" min="0" max="255" step="1" value="0" id="R"/>
+                <label for="G">G</label>
+                <input type="number" min="0" max="255" step="1" value="0" id="G"/>
+                <label for="B">B</label>
+                <input type="number" min="0" max="255" step="1" value="0" id="B"/>
+                <button type="submit">Guess</button>
+            </form>
+            <button id="reset">Reset</button>
+            <button id="show-answer">Show answer</button>
+        </div>
+    </body>
+</html>

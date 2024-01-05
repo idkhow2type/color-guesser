@@ -1,0 +1,145 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fafafa;
+    margin: 2em;
+    padding: 2em;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    height: calc(100vh - 20em);
+    color: #333;
+}
+
+h2 {
+    color: #333;
+    font-weight: 300;
+}
+
+.color-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.color-display p {
+    height: 1em;
+}
+
+.color-display div {
+    width: 50%;
+    aspect-ratio: 1/1;
+    border: 2px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.stats {
+    grid-column: 1/4;
+    place-self: center;
+}
+
+.controls {
+    grid-column: 1/4;
+    place-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+form {
+    grid-column: 1/3;
+    margin-bottom: 20px;
+}
+
+input[type='number'] {
+    width: 50px;
+    height: 30px;
+    margin: 0 10px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+button:hover {
+    background-color: #444;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.green {
+    color: limegreen;
+}
+
+.yellow {
+    color: orange;
+}
+
+.red {
+    color: tomato;
+}
+
+.rainbow {
+    animation: rainbow 5s infinite;
+}
+
+.wiggle {
+    animation: wiggle 2s ease-in-out infinite;
+}
+
+@keyframes rainbow {
+    0% {
+        background-color: hsl(0, 100%, 80%);
+    }
+    16.66% {
+        background-color: hsl(60, 100%, 80%);
+    }
+    33.33% {
+        background-color: hsl(120, 100%, 80%);
+    }
+    50% {
+        background-color: hsl(180, 100%, 80%);
+    }
+    66.66% {
+        background-color: hsl(240, 100%, 80%);
+    }
+    83.33% {
+        background-color: hsl(300, 100%, 80%);
+    }
+    100% {
+        background-color: hsl(360, 100%, 80%);
+    }
+}
+
+@keyframes wiggle {
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(-5deg);
+    }
+    20% {
+        transform: rotate(6deg);
+    }
+    30% {
+        transform: rotate(-5deg);
+    }
+    40% {
+        transform: rotate(4.5deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+}
